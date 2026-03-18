@@ -87,7 +87,7 @@
             txtId.Name = "txtId";
             txtId.ReadOnly = true;
             txtId.Size = new Size(634, 31);
-            txtId.TabIndex = 11;
+            txtId.TabIndex = 5;
             // 
             // cmbStatus
             // 
@@ -96,7 +96,7 @@
             cmbStatus.Location = new Point(163, 203);
             cmbStatus.Name = "cmbStatus";
             cmbStatus.Size = new Size(634, 33);
-            cmbStatus.TabIndex = 10;
+            cmbStatus.TabIndex = 4;
             // 
             // numStock
             // 
@@ -104,7 +104,7 @@
             numStock.Location = new Point(163, 153);
             numStock.Name = "numStock";
             numStock.Size = new Size(634, 31);
-            numStock.TabIndex = 9;
+            numStock.TabIndex = 3;
             // 
             // lblName
             // 
@@ -112,7 +112,7 @@
             lblName.Location = new Point(3, 0);
             lblName.Name = "lblName";
             lblName.Size = new Size(59, 25);
-            lblName.TabIndex = 0;
+            lblName.TabIndex = 6;
             lblName.Text = "Name";
             // 
             // lblCategory
@@ -121,7 +121,7 @@
             lblCategory.Location = new Point(3, 50);
             lblCategory.Name = "lblCategory";
             lblCategory.Size = new Size(84, 25);
-            lblCategory.TabIndex = 1;
+            lblCategory.TabIndex = 7;
             lblCategory.Text = "Category";
             // 
             // lblPrice
@@ -130,7 +130,7 @@
             lblPrice.Location = new Point(3, 100);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(49, 25);
-            lblPrice.TabIndex = 2;
+            lblPrice.TabIndex = 8;
             lblPrice.Text = "Price";
             // 
             // lblStock
@@ -139,7 +139,7 @@
             lblStock.Location = new Point(3, 150);
             lblStock.Name = "lblStock";
             lblStock.Size = new Size(55, 25);
-            lblStock.TabIndex = 3;
+            lblStock.TabIndex = 9;
             lblStock.Text = "Stock";
             // 
             // lblStatus
@@ -148,7 +148,7 @@
             lblStatus.Location = new Point(3, 200);
             lblStatus.Name = "lblStatus";
             lblStatus.Size = new Size(60, 25);
-            lblStatus.TabIndex = 4;
+            lblStatus.TabIndex = 10;
             lblStatus.Text = "Status";
             // 
             // lblID
@@ -157,7 +157,7 @@
             lblID.Location = new Point(3, 250);
             lblID.Name = "lblID";
             lblID.Size = new Size(30, 25);
-            lblID.TabIndex = 5;
+            lblID.TabIndex = 11;
             lblID.Text = "ID";
             // 
             // txtName
@@ -166,7 +166,7 @@
             txtName.Location = new Point(163, 3);
             txtName.Name = "txtName";
             txtName.Size = new Size(634, 31);
-            txtName.TabIndex = 6;
+            txtName.TabIndex = 0;
             // 
             // cmbCategory
             // 
@@ -175,7 +175,7 @@
             cmbCategory.Location = new Point(163, 53);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(634, 33);
-            cmbCategory.TabIndex = 7;
+            cmbCategory.TabIndex = 1;
             // 
             // numPrice
             // 
@@ -183,7 +183,7 @@
             numPrice.Location = new Point(163, 103);
             numPrice.Name = "numPrice";
             numPrice.Size = new Size(634, 31);
-            numPrice.TabIndex = 8;
+            numPrice.TabIndex = 2;
             // 
             // flowLayoutPanel1
             // 
