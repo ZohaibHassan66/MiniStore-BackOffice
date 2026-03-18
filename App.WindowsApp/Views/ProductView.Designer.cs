@@ -205,6 +205,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(264, 31);
             txtSearch.TabIndex = 0;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // cmdCategory
             // 
@@ -215,6 +216,7 @@
             cmdCategory.Name = "cmdCategory";
             cmdCategory.Size = new Size(196, 33);
             cmdCategory.TabIndex = 1;
+            cmdCategory.SelectedIndexChanged += cmdCategory_SelectedIndexChanged;
             // 
             // cmdStock
             // 
@@ -225,6 +227,7 @@
             cmdStock.Name = "cmdStock";
             cmdStock.Size = new Size(198, 33);
             cmdStock.TabIndex = 2;
+            cmdStock.SelectedIndexChanged += cmdStock_SelectedIndexChanged;
             // 
             // lblSearch
             // 

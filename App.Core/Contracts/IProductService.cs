@@ -5,11 +5,12 @@ using System.Collections.Generic;
 using System.Text;
 
 
+
 namespace App.Core.Contracts
 {
     public interface IProductService
     {
-        public void Add(Product product);
+        public Product Add(Product product);
 
         public bool Update(Product product);
 
