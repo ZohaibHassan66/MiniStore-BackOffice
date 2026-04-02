@@ -1,5 +1,6 @@
 ﻿using App.Core.Contracts;
 using App.WindowsApp.Views;
+using App.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,12 +15,14 @@ namespace App.WindowsApp.Forms
 {
     public partial class MainForm : Form
     {
-        private readonly Dictionary<Type, UserControl> _views = new Dictionary<Type, UserControl> ();
+        private readonly Dictionary<Type, UserControl> _views = new Dictionary<Type, UserControl>();
+        private readonly ICustomerService _customerService;
         private readonly IProductService _productService;
         public MainForm(IProductService productService)
         {
             InitializeComponent();
             _productService = productService;
+            _customerService = new InMemoryCustomerService();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -72,13 +75,18 @@ namespace App.WindowsApp.Forms
 
         }
 
-        private void ShowView<T>(Func<T> factory) where T:UserControl
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            ShowView(() => new CustomerView(_customerService));
+        }
+
+        private void ShowView<T>(Func<T> factory) where T : UserControl
         {
 
             var key = typeof(T);
-            if(!_views.TryGetValue(key,  out var view))
+            if (!_views.TryGetValue(key, out var view))
             {
-                view= factory();
+                view = factory();
                 view.Dock = DockStyle.Fill;
                 _views[key] = view;
             }
@@ -90,9 +98,9 @@ namespace App.WindowsApp.Forms
 
             view.BringToFront();
 
-            
+
         }
 
-        
+
     }
 }

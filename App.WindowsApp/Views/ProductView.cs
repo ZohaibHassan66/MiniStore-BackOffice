@@ -129,7 +129,7 @@ namespace App.WindowsApp.Views
         {
             RefreshGrid();
         }
-
+        
         private void cmdCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
             RefreshGrid();
